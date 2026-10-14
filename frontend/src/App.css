@@ -1,0 +1,285 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f3f6fb;
+  color: #17233c;
+}
+
+.app-shell {
+  min-height: 100vh;
+}
+
+.topbar {
+  background: #142747;
+  color: white;
+  padding: 18px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-icon {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: #3978ed;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.brand h2 {
+  margin: 0;
+  font-size: 19px;
+}
+
+.brand p {
+  margin: 4px 0 0;
+  color: #c2d0e8;
+  font-size: 12px;
+}
+
+.navigation {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.navigation a {
+  color: #e2eaf8;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.navigation a:hover,
+.navigation a.active {
+  background: #2b4165;
+  color: white;
+}
+
+.main-content {
+  width: 92%;
+  max-width: 1250px;
+  margin: 38px auto;
+  min-height: 65vh;
+}
+
+.page-container {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 5px 24px rgba(25, 44, 78, 0.06);
+}
+
+.page-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.page-heading h1,
+.page-container h1 {
+  margin: 5px 0 8px;
+  font-size: 28px;
+}
+
+.eyebrow {
+  color: #3978ed;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.subtitle {
+  color: #77849a;
+  margin: 0;
+}
+
+.total-card {
+  background: #edf4ff;
+  border-radius: 12px;
+  padding: 18px 24px;
+  min-width: 145px;
+}
+
+.total-card span {
+  display: block;
+  color: #536783;
+  font-size: 13px;
+}
+
+.total-card strong {
+  display: block;
+  color: #245bc1;
+  font-size: 28px;
+  margin-top: 6px;
+}
+
+form {
+  max-width: 760px;
+}
+
+form label {
+  display: block;
+  margin: 16px 0 7px;
+  color: #34445f;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+form input,
+form select {
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 1px solid #d6deea;
+  border-radius: 8px;
+  background: white;
+  color: #17233c;
+  font: inherit;
+  outline: none;
+}
+
+form input:focus,
+form select:focus {
+  border-color: #3978ed;
+  box-shadow: 0 0 0 3px rgba(57, 120, 237, 0.12);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  padding: 11px 17px;
+  font: inherit;
+  font-weight: 600;
+}
+
+form button {
+  margin-top: 22px;
+  background: #2868dc;
+  color: white;
+}
+
+form button:hover {
+  background: #1d51b0;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  text-align: left;
+}
+
+th {
+  background: #f0f4fa;
+  color: #475a76;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+th,
+td {
+  padding: 15px 13px;
+  border-bottom: 1px solid #e9eef5;
+}
+
+td {
+  color: #35445c;
+}
+
+tbody tr:hover {
+  background: #f8faff;
+}
+
+.status-pill {
+  display: inline-block;
+  padding: 6px 9px;
+  border-radius: 20px;
+  background: #e9f7ef;
+  color: #237346;
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+.delete-button {
+  background: #fff0f0;
+  color: #bb3030;
+  padding: 8px 11px;
+}
+
+.delete-button:hover {
+  background: #ffdddd;
+}
+
+.empty-state,
+.status-message {
+  padding: 35px 20px;
+  text-align: center;
+  color: #6c7a91;
+  background: #f7f9fd;
+  border-radius: 12px;
+}
+
+.empty-state h3 {
+  color: #263b5b;
+}
+
+.error-message {
+  color: #b42318;
+  background: #fff0ee;
+  padding: 14px;
+  border-radius: 8px;
+}
+
+.footer {
+  text-align: center;
+  color: #7a879a;
+  font-size: 12px;
+  padding: 20px;
+}
+
+@media (max-width: 650px) {
+  .topbar {
+    padding: 18px 4%;
+  }
+
+  .main-content {
+    width: 94%;
+    margin: 20px auto;
+  }
+
+  .page-container {
+    padding: 20px 15px;
+  }
+
+  .page-heading h1 {
+    font-size: 23px;
+  }
+}
